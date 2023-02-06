@@ -1,0 +1,1 @@
+- [Difference between Graphql and REST api](https://www.apollographql.com/blog/graphql/basics/graphql-vs-rest/)
