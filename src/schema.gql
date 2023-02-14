@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Author {
+  id: Int!
+  firstName: String!
+  lastName: String!
+  email: String!
+  phoneNumber: Float
+}
+
+type Query {
+  getAuthors: [Author!]!
+  getAuthorById(id: Float!): Author!
+}
+
+type Mutation {
+  createAuthor(createAuthorDto: CreateAuthorDto!): [Author!]!
+  updateAuthor(id: Float!, createAuthorDto: CreateAuthorDto!): [Author!]!
+  deleteAuthor(id: Float!): [Author!]!
+}
+
+input CreateAuthorDto {
+  firstName: String!
+  lastName: String!
+  email: String!
+  phoneNumber: Float
+}
