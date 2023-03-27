@@ -1,0 +1,24 @@
+type User {
+  _id: String
+  FirstName: String
+  LastName: String
+  Email: String
+  PhoneNumber: Int
+}
+
+type Query {
+  getAllUsers: [User]
+  getUserById(id: String): User
+}
+
+input UserInput {
+  _id: String!
+  FirstName: String!
+  LastName: String
+  Email: String!
+  PhoneNumber: Int
+}
+
+type Mutation {
+  createUser(user: UserInput): User
+}
